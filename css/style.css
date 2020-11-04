@@ -1,0 +1,144 @@
+body {
+  background-color: #283332;
+  margin: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.centered {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ================ */
+/* Canvas Container */
+/* ================ */
+
+#container {
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#status_label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  font-family: 'impact';
+  font-size: 20px;
+  text-align: center;
+  pointer-events: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black;
+  transition: all 2s;
+  z-index: 9999;
+}
+
+#status_label.active {
+  top: 60%;
+  font-size: 40px;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+#status_label span {
+  font-size: 60px;
+}
+
+#result_panel {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#result_panel.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#result_panel img {
+  max-width: 100%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  margin-top: 5%;
+  display: none;
+}
+
+#result_panel img.active {
+  display: block;
+}
+
+#canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* ====== */
+/*  Menu  */
+/* ====== */
+
+#menu {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -400px;
+  z-index: 10;
+  box-shadow: 5px 0 10px black;
+  background-color: white;
+  transition: left 1s;
+}
+
+#menu.active {
+  left: 0;
+}
+
+#menu_button {
+  position: absolute;
+  left: 410px;
+  height: 48px;
+  width: 48px;
+  /*background-color: rgba(255, 255, 255, 1);*/
+}
+
+#menu_button:hover {
+  cursor: pointer;
+}
+
+#config {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#menu input[type=range] {
+  width: 90%;
+}
+
+#planets .bribe label + input {
+  width: 70%
+}
+
+.range_number {
+  margin-left: 5px;
+}
+
+.collection {
+  margin: 0;
+}
