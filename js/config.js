@@ -16,24 +16,24 @@
   function getPlanets() {
       var planets = [{
         label: 'raccoonsofasgard',
-        name: 'Raccoons of Asgard',
+        name: 'Bon de réduction',
         icon: 'images/raccoon-icon.png',
-        color: '#FCC425',
+        color: '#ffea98',
       }, {
         label: 'schizocats',
-        name: 'Schizo Cats',
+        name: 'Coffret Argilo',
         icon: 'images/schizo-icon.png',
-        color: '#4F6A82',
+        color: '#ffe474',
       }, {
         label: 'duckinvaders',
-        name: 'Duck Invaders',
+        name: '2 Masque Argilo',
         icon: 'images/duck-icon.png',
-        color: '#4EA33B',
+        color: '#ffdd4c',
       }, {
         label: 'donutfactory',
-        name: 'Donut Factory',
+        name: 'Conseil Beauté',
         icon: 'images/donut-icon.png',
-        color: '#CE141A',
+        color: '#fff1ba',
       }];
 
       planets.forEach(function(planet, index) {
@@ -109,7 +109,7 @@
 
       wording: {
         tooSlow: 'Harder. Better. Faster. Stronger ?',
-        result: 'You\'re an official member of Planet <br/><span><%= planetName %> !</span><br/>Welcome Home <%= playerName ? playerName + " " : "" %>!',
+        result: 'vous avez gagner <br/><span><%= planetName %> !</span><br/> Bravo <%= playerName ? playerName + " " : "" %>!',
       },
 
       planets: getPlanets(),
