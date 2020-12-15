@@ -16,7 +16,7 @@
   function getPlanets() {
       var planets = [{
         label: 'raccoonsofasgard',
-        name: 'Bon de réduction',
+        name: 'Bon de réduction 20%',
         icon: 'images/raccoon-icon.png',
         color: '#ffea98',
       }, {
